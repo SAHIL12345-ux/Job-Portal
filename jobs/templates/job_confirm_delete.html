@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Delete job</title></head>
+<body>
+  <form method="post">
+    {% csrf_token %}
+    <p>Delete {{ object }}?</p>
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>My jobs</title></head>
+<body>
+  {% for job in my_jobs %}
+    <article><a href="{% url 'job_detail' job.pk %}">{{ job.title }}</a></article>
+  {% empty %}
+    <p>You have not posted any jobs.</p>
+  {% endfor %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Job</title></head>
+<body>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save job</button>
+  </form>
+</body>
+</html>
